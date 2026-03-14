@@ -5264,16 +5264,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 107.95) (xy 245.11 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3325dad1-5e7e-4cd1-9a20-7fe0fb0126ec")
-	)
-	(wire
-		(pts
 			(xy 232.41 113.03) (xy 251.46 113.03)
 		)
 		(stroke
@@ -5424,7 +5414,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 105.41) (xy 245.11 105.41)
+			(xy 241.3 105.41) (xy 259.08 105.41)
 		)
 		(stroke
 			(width 0)
@@ -6044,6 +6034,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 105.41) (xy 261.62 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2b33544-58f3-4b91-a952-9597486d5d87")
+	)
+	(wire
+		(pts
 			(xy 353.06 49.53) (xy 368.3 49.53)
 		)
 		(stroke
@@ -6101,6 +6101,16 @@
 			(type default)
 		)
 		(uuid "baaf16e3-3db7-4712-94e4-53e56706acfb")
+	)
+	(wire
+		(pts
+			(xy 261.62 107.95) (xy 241.3 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc183e88-a77b-42b5-a0d3-dfd9f1a5a82d")
 	)
 	(wire
 		(pts
@@ -6494,7 +6504,7 @@
 	)
 	(global_label "D+"
 		(shape input)
-		(at 245.11 107.95 0)
+		(at 261.62 105.41 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6504,7 +6514,7 @@
 		)
 		(uuid "0d1b9f4a-4324-41b3-b192-54f2d7e79a5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.9376 107.95 0)
+			(at 261.62 99.5824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6560,7 +6570,7 @@
 	)
 	(global_label "D-"
 		(shape input)
-		(at 245.11 105.41 0)
+		(at 259.08 105.41 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6570,7 +6580,7 @@
 		)
 		(uuid "fe7a3635-5a87-4a87-a74c-6086b945549f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.9376 105.41 0)
+			(at 259.08 99.5824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +7218,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 238.76 107.95 90)
+			(at 238.76 109.728 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10184,7 +10194,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 238.76 105.41 90)
+			(at 238.76 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
