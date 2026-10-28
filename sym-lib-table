@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "Drone_FCU") (type "KiCad") (uri "${KIPRJMOD}/Drone_FCU.kicad_sym") (options "") (descr "Project-specific drone symbols"))
+)

@@ -1,0 +1,4 @@
+ICM-42688-P KiCad symbol, footprint and STEP model
+Source: https://github.com/murexrobotics/electrical/tree/7fcfe4ee71e1514080ec1bc95f309e7db78b61ad/library/ICM-42688-P
+Symbol and footprint were repointed to the project-local library; the footprint was linked to the STEP model. A stale stock field was removed.
+Datasheet checked: TDK InvenSense DS-000347 revision 1.2, pages 19 and 54-55.
