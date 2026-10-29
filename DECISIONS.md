@@ -1,0 +1,16 @@
+# Design decisions and change log
+
+Append a dated entry when a meaningful decision is made or changed. Record the choice, why, and any uncertainty or follow-up; update outdated entries by referring to the new decision rather than silently rewriting history. The schematic remains the source of truth for what is actually placed and connected.
+
+## 2026-10-29 — Initial documented baseline
+
+- **Learning workflow:** William builds the schematic and PCB with incremental guidance; the assistant checks each saved step with the KiCad MCP. Direct edits are reserved for changes he explicitly requests. Use readable visual wiring diagrams when useful.
+- **Aircraft:** Basic 4-motor brushless quadcopter, 4S LiPo, separate 4-in-1 ESC, target 30.5 × 30.5 mm mounting. Avoid an all-in-one ESC for the first FC design to keep high-current motor circuitry out of the beginner PCB.
+- **Flight controller:** STM32F722VETx MCU and ICM-42688-P SPI IMU. Motor outputs are labeled on PA0–PA3; receiver UART labels on PB10/PB11. DShot timer/DMA support and flight firmware remain unverified. A neural-network controller is a future experiment, not an implemented feature.
+- **ESC target:** AERO SELFIE 45A 4IN1-ESC-LDO, selected as a lower-cost candidate for a separate ESC. Its manufacturer manual specifies 2S–6S, 30.5 mm mounting, an eight-wire 1.0 mm-pitch cable, and no BEC. Amazon price and availability can change. J3 is an unassigned 8-pin connector; the connector family, cable pin order and mating footprint are not confirmed. Source: https://cdn.shopify.com/s/files/1/0728/7321/4171/files/45A_4IN1-ESC_Manual_Book_EN-CN.pdf?v=1745301381
+- **Regulated power:** AP2112K-3.3 LDO; LM2596S-5 buck under design because the chosen ESC has no 5 V BEC. Preliminary buck values: 100 µH inductor (assumes roughly 1 A load), 100 µF/50 V input capacitor, 220 µF/25 V output capacitor, 1N5825 catch diode. Size and validate against the actual load and transient conditions before fixing the BOM or powering hardware. Source: https://www.ti.com/lit/ds/symlink/lm2596.pdf
+- **Power-source isolation:** D4/D5 B5819W diodes from `BUCK_5V` and `USB_VBUS` to `+5V`, with cathodes at `+5V`. This is provisional diode ORing: voltage drops, reverse leakage, USB source limits, simultaneous-power behavior, and thermal ratings require review. Verify that every future peripheral tolerates the reduced rail voltage.
+- **USB:** USB-C receptacle uses independent CC pull-downs and USBLC6-2SC6 ESD protection; U3 VBUS and J2 VBUS share `USB_VBUS`. SWD test points and a reset circuit are present.
+- **Battery monitoring:** 100 kΩ / 15 kΩ divider with 100 nF filter into PC0. The battery input is not yet connected; transient protection and MCU injection when unpowered must be assessed.
+- **Portability:** A project-local IMU library and model are committed, but the placed symbol and footprint reference user-global library nicknames. A fresh clone must be checked before fabrication.
+- **Tool caution:** During a trial layout edit on a temporary schematic, the KiCad MCP wire-deletion operation removed unrelated junctions. Discarded that result; no such edit was applied to the project. Compare whole-design netlists and diffs when using file-modifying tools.
