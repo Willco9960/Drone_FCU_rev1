@@ -1,0 +1,2 @@
+# Preserve CAD model bytes across platforms.
+*.step -text

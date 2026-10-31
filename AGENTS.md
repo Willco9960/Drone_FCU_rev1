@@ -1,4 +1,6 @@
 # Drone FCU project guidance
+> **Project location and historical references:** The active H743 bench project is in `Drone_MCU_V1/`; read its `AGENTS.md` and `V1_PLAN.md`. The earlier F722 project and its libraries are in `REV_1/`. Component references and connectivity below describe an earlier legacy snapshot and may be outdated after reannotation; inspect the saved schematic and `DECISIONS.md` before relying on them.
+
 
 ## Collaboration
 

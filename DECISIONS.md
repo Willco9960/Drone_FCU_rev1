@@ -82,3 +82,8 @@ Append a dated entry when a meaningful decision is made or changed. Record the c
 ## 2026-10-30 — Desktop GPU details
 
 - User reports the RTX 3080 has 10 GB dedicated GPU memory, 16 GB shared memory, and Windows driver version 32.0.15.9174. Treat shared system memory separately from dedicated VRAM when assessing simulation workloads. The then-current Isaac Sim 6.0.1 published minimum is 16 GB VRAM; this desktop is below that baseline. Confirm actual driver compatibility and runtime behavior when installing any tools.
+
+## 2026-10-31 — Organize legacy revision
+
+- Moved the original F722 REV_1 KiCad project, project-relative symbol/footprint/3D libraries and library tables, legacy STM32Cube configuration, source note, and existing backups into `REV_1/`. The active H743 V1 project remains in `Drone_MCU_V1/`.
+- The move does not change either schematic. KiCad-exported legacy netlists before and after differ only in source path and export timestamp; V1 and legacy MCP netlists also match before and after. The legacy IMU's pre-existing global-library portability issue remains unresolved.

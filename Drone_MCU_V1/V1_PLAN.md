@@ -13,7 +13,7 @@ The long-term goal is a 3-inch-frame autonomous quadcopter that can follow, trac
 - William builds the schematic and PCB himself as a learning project. Guide him in meaningful groups with clear, readable interactive wiring diagrams. Avoid drawing out the work by asking him to perform one trivial action per round. After each saved group, inspect with KiCad MCP and give precise corrections.
 - Do not edit the schematic, PCB or libraries unless he explicitly requests that particular edit. Preserve open-editor/unsaved state. If explicitly editing outside KiCad, start from a fresh saved copy, inspect the entire diff and compare authoritative KiCad-exported pin-level netlists before and after; coordinate editor reload.
 - The V1 files are Drone_MCU_V1.kicad_pro, Drone_MCU_V1.kicad_sch (root), MCU.kicad_sch (hierarchical sheet), and Drone_MCU_V1.kicad_pcb. See AGENTS.md here for agent instructions and ../DECISIONS.md for chronological design history. References in the root AGENTS.md describe the earlier F722 project; do not apply them as V1 pin assignments.
-- The earlier Drone_FCU_rev1 schematic is retained as a historical/reference design. V1 is a fresh design; do not copy unresolved battery, ESC or MCU circuitry without an independent review.
+- The earlier REV_1/Drone_FCU_rev1.kicad_sch schematic is retained as a historical/reference design. V1 is a fresh design; do not copy unresolved battery, ESC or MCU circuitry without an independent review.
 - User prefers LCSC-available and reasonably priced parts and beginner-friendly footprints. Check current price/availability and manufacturer datasheets before selecting components. Use visual diagrams that are readable without overlapping text.
 
 ## Current saved state (2026-10-31)
