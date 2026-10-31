@@ -1,0 +1,60 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b322dd26-fd40-4dbd-87cd-c80c7b0cca79")
+	(paper "A3")
+	(lib_symbols)
+	(sheet
+		(at 179.07 91.44)
+		(size 66.04 81.28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "16329a77-8002-4a88-a037-5aa27b347ca6")
+		(property "Sheetname" "MCU"
+			(at 179.07 90.7284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 179.07 173.3046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Drone_MCU_V1"
+				(path "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
