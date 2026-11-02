@@ -2,6 +2,17 @@
 
 Append a dated entry when a meaningful decision is made or changed. Record the choice, why, and any uncertainty or follow-up; update outdated entries by referring to the new decision rather than silently rewriting history. The schematic remains the source of truth for what is actually placed and connected.
 
+## 2026-11-02 — V1 sensor changed to ICM-42631
+
+- William replaced the original ICM-42688-P with ICM-42631, now U5, as a lower-cost candidate. Saved KiCad netlist: 5/8 +3V3; 2/3/6/7/9 GND; 10/11 no-connect; 1 MISO, 12 CS, 13 SCK, 14 MOSI and 4 INT1 remain correctly connected. C15 100 nF, C16 2.2 uF and C17 10 nF remain across +3V3/GND; R4 10 kOhm pulls CS high.
+- Both datasheets specify 14-lead LGA 2.5 x 3 x 0.91 mm, 0.5 mm pitch; the user verified the same package. The assigned User_Sensors:PQFN50P300X250X97-14N was checked pad by pad against the 42631 top-view package drawing: numbering, nominal centers, pitch and pin-1 marker agree. All 14 solder-mask openings are centered and extend 0.05 mm around pads; full-size paste openings are present. The nominal 0.05 mm mask web and stencil settings still require fabricator review. Its global 3D model is for the 42688-P; alignment and repository portability remain unverified. Firmware, exact JLCPCB assembly availability and the BOM cost remain unverified. Use only single-interface mode with grounded auxiliary pins and do not configure grounded pin 9 as an output.
+
+## 2026-11-02 — Provisional V1 programming probe
+
+- William chose the AITRIP ST-Link V2-style SWD probe (Amazon ASIN B0D22S8WVX) as the provisional V1 programmer. Keep USB-C DFU as an additional intended programming path and SWD for debugging and recovery.
+- This third-party probe has not been tested with the STM32H743VIT6 or the user's Mac. Confirm its actual pinout, SWD logic voltage, reset support, software compatibility, and behavior before connecting it. Its listing describes 3.3 V and 5 V pins as power outputs: do not assume either is a target-voltage sense input or connect competing power sources.
+- J1 uses Cortex 10-pin signal numbering, but its physical connector and the adapter to the probe's 2.54 mm jumper wires remain to be selected and verified. USB DFU boot configuration, clock and power requirements, and actual operation also remain to be verified.
+
 ## 2026-10-29 — Initial documented baseline
 
 - **Learning workflow:** William builds the schematic and PCB with incremental guidance; the assistant checks each saved step with the KiCad MCP. Direct edits are reserved for changes he explicitly requests. Use readable visual wiring diagrams when useful.
