@@ -2,6 +2,33 @@
 
 Append a dated entry when a meaningful decision is made or changed. Record the choice, why, and any uncertainty or follow-up; update outdated entries by referring to the new decision rather than silently rewriting history. The schematic remains the source of truth for what is actually placed and connected.
 
+## 2026-11-02 — Provisional JLCPCB manufacturing rules
+
+- Configured project rules for a proposed 2-layer FR-4 board with 1 oz finished copper, 1.6 mm thickness and green mask; actual manufacturing options must be confirmed at order time. JLCPCB capabilities: https://jlcpcb.com/capabilities/Capabilities?type=1
+- Preserved 0.20 mm default track width and clearance, set 0.127 mm minimum track width and 0.10 mm absolute copper clearance, and added routing-width presets of 0.20, 0.25, 0.40 and 0.60 mm. The custom rule file allows 0.15 mm only between U5 pads. This does not relax U5 pad-to-track clearance, which remains governed by the default rules.
+- Set standard vias to 0.70 mm diameter / 0.30 mm drill, minimum via annular ring 0.20 mm, minimum drill 0.30 mm, copper-to-hole 0.30 mm, hole-to-hole 0.45 mm and copper-to-edge 0.50 mm. Custom rules require NPTH drill at least 0.50 mm. These are conservative choices rather than claims of mandatory JLC minimums.
+- Set silk clearance and line/text thickness to 0.15 mm, text height to 1.0 mm and solder-mask-opening to copper clearance to 0.09 mm. A targeted U5 F.Mask physical clearance rule checks 0.10 mm mask separation. Do not apply KiCad's global 0.10 mm mask-width merge as a substitute without reviewing the Gerbers: it changed the exported mask in testing. The prior and final F.Mask Gerbers otherwise matched excluding timestamps.
+- KiCad CLI DRC reports 14 U5 mask graphic gaps of approximately 0.04–0.085 mm, 4 missing mounting-hole footprint library entries, and remaining silkscreen errors/warnings, plus 105 unrouted connections. These are unresolved, not approval for manufacturing. KiCad's scoped U5 physical mask rule is not a complete global solder-mask DFM check; paste, assembly, BOM, impedance/USB, actual stackup and frame still require review.
+
+## 2026-11-02 — Provisional PCB component placement
+
+- After U5 failed to import, added a global Drone_MCU_Sensors footprint-library entry pointing to the same project-local library. William subsequently confirmed U5 imported via KiCad. The project-local library remains the portable source; the global entry is specific to this machine and project location.
+- William authorized preliminary placement, with routing left to him. Used the KiCad MCP to position 31 remaining components while preserving the existing MCU, USB connector, SWD header and four mounting-hole positions. U2 is near USB, C10/C11 near U1 VCAP pins, and U5 near the MCU SPI side. The USB connector body deliberately extends beyond the top edge. Placement remains provisional; check USB access, decoupler routing, sensor placement, chosen frame and actual hardware clearance.
+- Compared all pad-to-net assignments before and after; KiCad-exported schematic has 19 connected groups, with none split or merged on the board. There are no tracks. The MCP courtyard check shows no electrical-component overlaps; the connector's edge overhang is deliberate. PCB DRC still reports 105 unconnected items, four missing mounting-hole library entries, 12 IMU pad clearance errors (0.15 mm between certain pads vs 0.20 mm current default), and silkscreen violations. Do not treat this as fabrication-ready. Confirm the target stackup and appropriate local rules; the sensor's 0.05 mm solder-mask web needs explicit manufacturer review.
+
+## 2026-11-02 — Provisional V1 PCB outline and mounting holes
+
+- At William's request, created a 38 x 38 mm PCB outline with 2 mm corner radii and four 3.2 mm non-plated mounting holes at 30.5 x 30.5 mm pitch. This follows the previous full-size stack and ESC target, but 3-inch frames vary; choose and verify an actual frame, board outline, screw or grommet size, and stack clearance before fabrication.
+- The four board-only MCP-generated hole footprints are excluded from BOM and placement output. MCP generated their library ID as MountingHole:MountingHole_3.2mm, which is not present in the installed KiCad library. PCB DRC reports four library-lookup errors; replace them with verified available mounting-hole footprints before manufacturing. Do not suppress these warnings. The 4.2 mm visual pad diameter is not a screw-head, washer or grommet keepout; define actual hardware clearance during placement.
+- No schematic components have been transferred or routed. Before schematic-to-board update, retain the four board-only mounting footprints; review any delete-unmatched-footprints option. Assembly BOM, package checks, power budget, IMU footprint manufacturing review and remaining schematic ERC items are still open.
+
+## 2026-11-02 — V1 schematic cleanup and portable sensor library
+
+- At William’s request, marked 72 unused STM32 GPIOs as no-connect for this bench revision. Future use requires removing the relevant marker and wiring the pin; this does not provide accessible expansion pads by itself.
+- Refreshed cached Device:C_Small and power:GND symbol definitions from the installed KiCad libraries and removed redundant local ground and VTref labels where the power symbols already define those nets. Compared the complete connected-net membership against the pre-cleanup KiCad XML netlist; no connected pins changed.
+- Copied the ICM-42631 symbol, footprint and existing ICM-42688-P package model to the project-local Drone_MCU_Sensors library and updated the placed symbol to use it. The existing globally available library remains unchanged. The model alignment, solder mask/stencil and manufacturer assembly acceptance still require verification.
+- KiCad CLI ERC reports two remaining items: U1 VCAP pins 48 and 73 are intentionally tied per ST hardware guidance, and U5 pin 9 is grounded for the single-interface configuration and must not be configured as an output. Neither warning is globally suppressed. VCAP capacitor ESR/effective capacitance, actual BOM/assembly availability, USB power budget and physical bring-up remain open.
+
 ## 2026-11-02 — V1 sensor changed to ICM-42631
 
 - William replaced the original ICM-42688-P with ICM-42631, now U5, as a lower-cost candidate. Saved KiCad netlist: 5/8 +3V3; 2/3/6/7/9 GND; 10/11 no-connect; 1 MISO, 12 CS, 13 SCK, 14 MOSI and 4 INT1 remain correctly connected. C15 100 nF, C16 2.2 uF and C17 10 nF remain across +3V3/GND; R4 10 kOhm pulls CS high.

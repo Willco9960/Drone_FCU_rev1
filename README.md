@@ -4,4 +4,4 @@
 - [REV_1/](REV_1/) — earlier F722 KiCad design, STM32Cube configuration, and legacy project libraries.
 - [DECISIONS.md](DECISIONS.md) — chronological project decisions and unresolved constraints.
 
-The V1 design is unfinished and is not flight-ready.
+The V1 schematic and PCB have provisional placement and manufacturing rules, but the board is unrouted and has unresolved design and assembly checks. It is a bench prototype and is not ready to manufacture or fly.

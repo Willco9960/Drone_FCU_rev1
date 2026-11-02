@@ -8,14 +8,22 @@ This is William's learning project. Guide him through the schematic and PCB in s
 
 Explain design choices in plain language, challenge assumptions, and be explicit about what is provisional versus verified. Prefer clear in-conversation visual diagrams over text-only wiring diagrams when useful. Use the ponytail:ponytail skill for relevant coding work. Keep `DECISIONS.md` updated when a meaningful design decision changes; include date, reason, and unresolved constraints.
 
-## Project and goals
+## Active V1 project
+
+`Drone_MCU_V1/Drone_MCU_V1.kicad_pro` is the active KiCad 10 project. V1 is a USB-powered bench prototype with an STM32H743VITx and ICM-42631 IMU; it has no motor outputs or flight capability implemented. Read `Drone_MCU_V1/V1_PLAN.md` and the newest entries in `DECISIONS.md` for the current saved design, routing assumptions and unresolved manufacturing checks. The preliminary PCB is unrouted.
+
+The user routes the board and asks for MCP checks; do not make schematic, PCB or library edits unless he requests the particular change. He explicitly requested the preliminary placement and JLCPCB-oriented rule setup, but those permissions do not grant general permission to route. Work from a saved copy and protect open-editor work.
+
+## Historical REV_1 project and goals
+
+The information in this section and the following historical design choices concerns the older F722 `REV_1/` project, not the active H743 V1.
 
 - KiCad 10 project: `Drone_FCU_rev1.kicad_pro`, schematic `Drone_FCU_rev1.kicad_sch`, PCB `Drone_FCU_rev1.kicad_pcb`. The design is unfinished; a schematic check is not a flight-readiness certification.
 - Goal: a basic quadcopter flight controller for a 4S LiPo and a separate 4-in-1 brushless ESC, with a 30.5 mm mounting pattern. Keep the first PCB approachable for a KiCad beginner.
 - User prefers parts available from LCSC and affordable options, but availability and pricing must be checked when sourcing. Radio receiver selection and motors/propellers remain open.
 - A lightweight neural network for control is a future exploration, not a replacement for a verified baseline control and motor-safety design. Firmware and flight stability are not complete.
 
-## Current design choices
+## Historical REV_1 design choices
 
 - U1: STM32F722VETx. `MOTOR1`–`MOTOR4` are on PA0–PA3. UART labels `RC_TX`/`RC_RX` use PB10/PB11. Verify timer/DMA and firmware compatibility before promising DShot support.
 - U4: ICM-42688-P IMU on SPI1 (PA5/PA6/PA7), PB0 chip select with 10 kΩ pull-up, PC4 interrupt. Check the datasheet and the actual schematic before modifying reserved pins or the unused INT2/FSYNC/CLKIN pin.
@@ -31,8 +39,8 @@ The ESC connector pinout, protection against battery transients/reverse connecti
 
 ## Libraries and tools
 
-The repository includes `Drone_FCU.kicad_sym`, `Drone_FCU.pretty`, and `Drone_FCU.3dshapes` with project library tables. The placed IMU currently references the user's global `Sensor_Motion:ICM-42688-P` symbol and `User_Sensors` footprint, so a fresh clone may not resolve those paths even though project copies exist. Confirm and repair portability deliberately; don't silently edit the signed KiCad app's built-in libraries. Respect the user's preference for globally available symbols when importing new parts.
+The active V1 project contains the project-local `Drone_MCU_Sensors.kicad_sym`, `Drone_MCU_Sensors.pretty`, `Drone_MCU_Sensors.3dshapes` and library tables. Its ICM-42631 uses these assets; verify loading on a fresh clone and 3D model alignment. Historical `REV_1/` contains `Drone_FCU.kicad_sym`, `.pretty`, `.3dshapes` and its own library tables; its IMU may still depend on global libraries. Do not silently edit the signed KiCad app's built-in libraries. Respect the user's preference for globally available symbols when importing new parts.
 
-The KiCad MCP can inspect the schematic; use KiCad's exported netlist for an authoritative pin-level check, including power nets. A test of the MCP's schematic wire deletion on a temporary copy removed unrelated junctions; never assume a reported local edit has only local effects. Verify diffs and compare whole-design netlists before applying file edits. The MCP image exporter may fail to find `kicad-cli`; on the author's Mac it is at `/Applications/KiCad.app/Contents/MacOS/kicad-cli`.
+The KiCad MCP can inspect the schematic; use KiCad's exported netlist for an authoritative pin-level check, including power nets. A test of the MCP's schematic wire deletion on a temporary copy removed unrelated junctions; never assume a reported local edit has only local effects. Verify diffs and compare whole-design netlists before applying file edits. The MCP image exporter may fail to find `kicad-cli`; on the author's Mac it is at `/Applications/KiCad.app/Contents/MacOS/kicad-cli`. MCP schematic-to-board sync was observed to produce incorrect net assignments, and MCP rule reporting was stale after project edits. Use KiCad's own update and CLI export/DRC to verify the full pin-to-pad net groups and saved rule values; never apply a misleading sync result.
 
 Do not commit live `*.lck` files or transient `.history/` files. Preserve the user's project changes and do not overwrite open-editor state.

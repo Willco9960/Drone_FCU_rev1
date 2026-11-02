@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Drone_MCU_Sensors") (type "KiCad") (uri "${KIPRJMOD}/Drone_MCU_Sensors.pretty") (options "") (descr "V1 sensor footprints"))
+)

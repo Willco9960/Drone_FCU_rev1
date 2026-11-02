@@ -302,7 +302,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Motion:ICM-42631"
+		(symbol "Drone_MCU_Sensors:ICM-42631"
 			(pin_names
 				(offset 1.016)
 			)
@@ -331,7 +331,7 @@
 					)
 				)
 			)
-			(property "Footprint" "User_Sensors:PQFN50P300X250X97-14N"
+			(property "Footprint" "Drone_MCU_Sensors:PQFN50P300X250X97-14N"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1836,7 +1836,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Motion:ICM-42631")
+		(lib_id "Drone_MCU_Sensors:ICM-42631")
 		(at 62.23 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -1867,7 +1867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "User_Sensors:PQFN50P300X250X97-14N"
+		(property "Footprint" "Drone_MCU_Sensors:PQFN50P300X250X97-14N"
 			(at 62.23 48.26 0)
 			(hide yes)
 			(show_name no)
