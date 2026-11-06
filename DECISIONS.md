@@ -2,6 +2,30 @@
 
 Append a dated entry when a meaningful decision is made or changed. Record the choice, why, and any uncertainty or follow-up; update outdated entries by referring to the new decision rather than silently rewriting history. The schematic remains the source of truth for what is actually placed and connected.
 
+## 2026-11-03 — Onboard person tracking and orbit target
+
+- William wants the future aircraft to run stabilization, person detection, tracking of a selected person and follow/orbit behavior onboard. The laptop is intended to display streamed camera video, let him select the subject, and request behavior or send supervisory commands. This supersedes earlier plans for laptop-based continuous vision/control. Training can still take place on the PC.
+- Automatic obstacle avoidance is out of scope for now. Target identity through occlusions/crossings, person loss, camera-based distance/relative-position estimation, radio/video loss, manual override and safety remain open design and test requirements; detecting a person alone does not solve tracking or reliable following. The 100 m open-area direct laptop-link target remains provisional.
+- A compact MCU with integrated wireless and AI support remains preferred, but no single-chip solution has been selected. Benchmark the actual person detector and tracker, camera acquisition, video compression/streaming, stabilization workload, motor output timing, memory and power together. V1 remains the existing H743 USB-powered bench prototype with no camera, motors or flight capability.
+
+## 2026-11-03 — Future laptop link range target
+
+- William selected a preliminary target of up to 100 m between the future drone and laptop in an open area, using the laptop's built-in Wi-Fi if feasible and no internet service. This is a design/test target, not an ESP32 range claim or guarantee.
+- Verify telemetry, commands and intended camera video together with the selected laptop, antenna, airframe, orientations, software, radio settings and environmental conditions; record bidirectional packet loss, high-percentile/maximum latency, outages, signal, video bitrate/quality and command age. Define quantitative acceptance thresholds before selecting hardware, test first without propellers and maintain a validated operational margin inside the observed limit.
+- Link-loss behavior, independent manual control and motor safety, video architecture and any host fallback remain future design work; V1 has no wireless or flight capability. Built-in laptop antenna, local interference, carbon structure and limited line of sight may constrain the target. The external-aircraft-antenna preference and Arduino tooling preference remain in force.
+
+## 2026-11-03 — Antenna and firmware workflow preferences
+
+- For the future flight board William prefers an external antenna over a PCB trace antenna and likes Arduino IDE and Arduino libraries for ESP development. These are preferences, not a selected MCU, antenna, radio architecture or design change to V1. ESP32-S3-MINI-1U/WROOM-1U modules offer external antenna connectors but need evaluation for usable GPIO, size, cost and assembly; a bare chip and connector require matching and RF design. Validate the antenna, coax and mounting around the frame and RF coexistence.
+- Include a realistic provisional flight-board I/O budget (four ESC signals, IMU SPI and interrupt, optional RX UART, battery ADC, status LED and programming/debug access), allowing for memory, boot and debug pins; camera, ESC telemetry, GPS and other features could increase it. Verify actual pin allocation and motor-output timing concurrently with radio activity. Arduino libraries and examples are useful, but ESP-IDF integration and measured worst-case control timing may be needed.
+
+## 2026-11-03 — Future compact integrated wireless MCU preference
+
+- William wants a smaller, reasonably low-power and low-cost MCU in a later flight-oriented revision, preferably a non-BGA package with onboard wireless and some AI acceleration, to avoid a separate communications board where practical. This supersedes the 2026-10-30 preference to keep the same MCU in V1 and flight. Keep the existing H743 V1 unchanged; no new MCU has been selected or verified.
+- ESP32-S3FN8 is a research candidate: QFN-56 exposed-pad 7 x 7 mm, dual-core up to 240 MHz, 2.4 GHz Wi-Fi and BLE, with vector instructions useful to some neural-network workloads. Espressif sources: https://www.espressif.com/products/socs/esp32-s3 and https://documentation.espressif.com/esp32-s3_datasheet_en.pdf. LCSC candidate C2913196: https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-S3FN8_C2913196.html. Recheck current stock, assembly class and total BOM cost.
+- ESP32-C5 QFN48 6 x 6 mm is a wireless-focused comparison candidate with 2.4/5 GHz Wi-Fi, BLE and 802.15.4. It is single-core and no dedicated NN acceleration has been established; benchmark before judging suitability. Source: https://documentation.espressif.com/esp32-c5_datasheet_en.html
+- A single wireless chip may handle PC telemetry and other compatible protocols, but ESP32 Wi-Fi/BLE is not automatically an ExpressLRS or camera video receiver; same-band systems can interfere and a shared RF module time-slices protocols. Confirm laptop/OS direct offline connection, camera link, control and recovery independence, telemetry range and worst-case latency, compute/RAM headroom, power under TX load, motor timer/DMA compatibility, failsafes and RF/antenna layout before selecting a flight architecture. Retain small recovery/programming test pads even if large headers/USB connectors are removed.
+
 ## 2026-11-02 — Provisional JLCPCB manufacturing rules
 
 - Configured project rules for a proposed 2-layer FR-4 board with 1 oz finished copper, 1.6 mm thickness and green mask; actual manufacturing options must be confirmed at order time. JLCPCB capabilities: https://jlcpcb.com/capabilities/Capabilities?type=1
@@ -125,3 +149,29 @@ Append a dated entry when a meaningful decision is made or changed. Record the c
 
 - Moved the original F722 REV_1 KiCad project, project-relative symbol/footprint/3D libraries and library tables, legacy STM32Cube configuration, source note, and existing backups into `REV_1/`. The active H743 V1 project remains in `Drone_MCU_V1/`.
 - The move does not change either schematic. KiCad-exported legacy netlists before and after differ only in source path and export timestamp; V1 and legacy MCP netlists also match before and after. The legacy IMU's pre-existing global-library portability issue remains unresolved.
+
+## 2026-11-03 — Pre-routing cleanup and assembly review
+
+- Replaced four missing board-only mounting-hole footprint links with the official M3 3.2 mm footprint. Assigned J2 a project-local variant with three silkscreen lines moved to F.Fab because its connector shell crosses the board edge. Moved overlapping reference designators to F.Fab for legibility. Pad-to-net mapping was checked unchanged; the board has no tracks.
+- Preserved the IMU mask geometry: a shared opening was explored but generates 80 solder-mask bridge violations and is not approved by the assembler. Existing 14 U5 mask-clearance violations remain a fabrication gate, alongside stencil and assembly review. CLI DRC also reports 105 expected unrouted connections.
+- Candidate LCSC components, VCAP uncertainties and AP2112 current/thermal estimates are documented in `Drone_MCU_V1/V1_BOM_REVIEW.md`. JLCPCB assembly availability, exact orientations and final power budget are unverified. V1 remains an unrouted bench prototype; do not order or claim flight readiness on this basis.
+
+## 2026-11-03 — Begin power and ground routing
+
+- Started, but did not finish, power/ground routing. Added a B.Cu GND zone with a notch under U5, two local ground returns and selected F.Cu USB_VBUS/+3V3 traces. Signal nets were not routed. The zone and isolated trace groups do not imply full power or ground connectivity.
+- Refilled zone and ran KiCad DRC: 90 unconnected items and the 14 previously documented U5 mask-spacing findings; no new reported DRC violations. Further routing, placement/decoupling and power/thermal review, U5 mask/stencil approval and final manufacturing checks remain.
+
+## 2026-11-04 — Full routing authorized; four layers approved
+
+- User authorized full PCB routing and component relocation, and explicitly approved a four-layer JLCPCB stackup for USB impedance and ground reference. Actual stackup geometry and impedance still require validation.
+- Trial routing on a separate copy failed completeness and DRC checks; no trial board was applied. The active board remains the partial two-layer layout. Review evidence and the outstanding work are in `Drone_MCU_V1/reviews/2026-11-04/REVIEW.md`. Full routing and order readiness remain unfinished.
+
+## 2026-11-04 — Main board electrically routed; manufacturing hold
+
+- At the user's explicit request, enabled four layers and routed the main board. Routing is on the outer layers; inner layers carry GND zones. Final KiCad refill/DRC/parity reports 0 unconnected items, 0 schematic parity issues and the existing 14 U5 mask-spacing violations.
+- USB routing is NOT a verified differential pair or 90 ohm geometry. Power width/current suitability, precise physical stackup, decoupling placement, regulator budget and assembly release remain unfinished. Main board is not order-ready. Updated evidence is in `Drone_MCU_V1/reviews/2026-11-04/REVIEW.md`.
+
+## 2026-11-04 — USB routing trials and outline repair
+
+- The saved board was missing the lower-left Edge.Cuts corner arc; restored the exact arc from the prior board backup. KiCad DRC after refill reports a closed outline, zero unconnected items, and the existing 14 U5 mask-clearance findings.
+- Tried a fixed parallel USB segment and rerouting the rest of the board on a copy. The best complete-connectivity candidate still has a VBUS/USB trace crossing, two copper-clearance violations and one starved ground thermal. It is not applied to the main board. Full USB differential routing and order readiness remain open.

@@ -1,0 +1,94 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-04T14:13:08",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79/16329a77-8002-4a88-a037-5aa27b347ca6",
+            "violations": [
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 48 [VCAP, Power output, Line]",
+                            "pos": {
+                                "x": 186.69,
+                                "y": 196.85
+                            },
+                            "uuid": "7ac93bca-d9f1-4110-a548-0aee9e8c3375"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 73 [VCAP, Power output, Line]",
+                            "pos": {
+                                "x": 186.69,
+                                "y": 199.39
+                            },
+                            "uuid": "ab712989-811a-459a-9592-ed174e82fefd"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Sensors/",
+            "uuid_path": "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79/b19df1e6-6e74-48b3-9112-d2c75061099b",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 9 [INT2/FSYNC/AUX2_SDIO, Bidirectional, Line]",
+                            "pos": {
+                                "x": 36.83,
+                                "y": 43.18
+                            },
+                            "uuid": "c1f2b82d-b219-4c8b-9b9b-b8887096c544"
+                        },
+                        {
+                            "description": "Symbol #FLG02 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 73.66,
+                                "y": 50.8
+                            },
+                            "uuid": "8c23495f-3913-49c2-99bc-944bc2cb8f3a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        }
+    ],
+    "source": "Drone_MCU_V1.kicad_sch"
+}

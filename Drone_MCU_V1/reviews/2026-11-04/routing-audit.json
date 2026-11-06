@@ -1,0 +1,48 @@
+{
+  "layers": 4,
+  "nets": {
+    "/MCU/USB_DP": {
+      "sum_segment_length_mm": 31.017,
+      "layers": {
+        "F.Cu": 23,
+        "B.Cu": 6
+      },
+      "widths_mm": [
+        0.15,
+        0.2
+      ]
+    },
+    "/MCU/USB_DM": {
+      "sum_segment_length_mm": 28.135,
+      "layers": {
+        "F.Cu": 17,
+        "B.Cu": 2
+      },
+      "widths_mm": [
+        0.15,
+        0.2
+      ]
+    },
+    "+3V3": {
+      "sum_segment_length_mm": 162.337,
+      "layers": {
+        "F.Cu": 121
+      },
+      "widths_mm": [
+        0.15,
+        0.2
+      ]
+    },
+    "/MCU/USB_VBUS": {
+      "sum_segment_length_mm": 40.727,
+      "layers": {
+        "F.Cu": 40,
+        "B.Cu": 2
+      },
+      "widths_mm": [
+        0.15,
+        0.2
+      ]
+    }
+  }
+}

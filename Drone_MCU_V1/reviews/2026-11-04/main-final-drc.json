@@ -1,0 +1,359 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-04T14:25:23",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "Drone_MCU_V1.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 131.15
+                    },
+                    "uuid": "1734e1e8-1bb1-4971-8750-029a5a2b4bdf"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 131.65
+                    },
+                    "uuid": "5d884daf-0f3d-4229-8f97-a356ce653966"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 131.15
+                    },
+                    "uuid": "1734e1e8-1bb1-4971-8750-029a5a2b4bdf"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 130.74
+                    },
+                    "uuid": "41cb4476-dff1-4789-9a97-921c34282dbf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 131.65
+                    },
+                    "uuid": "5d884daf-0f3d-4229-8f97-a356ce653966"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 132.15
+                    },
+                    "uuid": "dbeadd69-368f-4bfa-807f-52ffd16be9c1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 132.65
+                    },
+                    "uuid": "c1405b19-0978-49d0-886a-2e1f3ee27b00"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 132.15
+                    },
+                    "uuid": "dbeadd69-368f-4bfa-807f-52ffd16be9c1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 132.57
+                    },
+                    "uuid": "a8fcdc42-2df8-4093-84c5-b71db2a98cf3"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.58,
+                        "y": 132.65
+                    },
+                    "uuid": "c1405b19-0978-49d0-886a-2e1f3ee27b00"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 130.74
+                    },
+                    "uuid": "41cb4476-dff1-4789-9a97-921c34282dbf"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 130.74
+                    },
+                    "uuid": "7c40b726-22d5-4bde-9f3a-2de7f599aaad"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 132.57
+                    },
+                    "uuid": "3ec80c8c-52c6-416d-a470-47abe6d2c208"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 132.57
+                    },
+                    "uuid": "a8fcdc42-2df8-4093-84c5-b71db2a98cf3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.8,
+                        "y": 130.74
+                    },
+                    "uuid": "44bebdbb-dc66-44dd-807f-c78f8fe214e2"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 130.74
+                    },
+                    "uuid": "7c40b726-22d5-4bde-9f3a-2de7f599aaad"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.3,
+                        "y": 132.57
+                    },
+                    "uuid": "3ec80c8c-52c6-416d-a470-47abe6d2c208"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.8,
+                        "y": 132.57
+                    },
+                    "uuid": "bdd81f2e-2df1-4a86-9b45-8124d678503f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.8,
+                        "y": 130.74
+                    },
+                    "uuid": "44bebdbb-dc66-44dd-807f-c78f8fe214e2"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 131.15
+                    },
+                    "uuid": "826fd3d5-e4c2-4baa-90d7-24cd4f38263f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0850 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 132.65
+                    },
+                    "uuid": "788693be-2291-4e68-be96-4884c7f63397"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 113.8,
+                        "y": 132.57
+                    },
+                    "uuid": "bdd81f2e-2df1-4a86-9b45-8124d678503f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 131.65
+                    },
+                    "uuid": "5c58fa77-8eb8-40ca-b8ba-544e7c3ad762"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 131.15
+                    },
+                    "uuid": "826fd3d5-e4c2-4baa-90d7-24cd4f38263f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 132.15
+                    },
+                    "uuid": "10c576ea-4e5d-4f8e-b713-021bb69aa1ff"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 131.65
+                    },
+                    "uuid": "5c58fa77-8eb8-40ca-b8ba-544e7c3ad762"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'U5 solder mask opening separation' clearance 0.1000 mm; actual 0.0400 mm)",
+            "items": [
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 132.15
+                    },
+                    "uuid": "10c576ea-4e5d-4f8e-b713-021bb69aa1ff"
+                },
+                {
+                    "description": "Polygon of U5 on F.Mask",
+                    "pos": {
+                        "x": 114.91,
+                        "y": 132.65
+                    },
+                    "uuid": "788693be-2291-4e68-be96-4884c7f63397"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}
