@@ -4407,11 +4407,11 @@
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "b3dcde8d-13f6-42d1-8564-76b2e26cbaa6")
-		(at 118 130)
+		(at 113.25 130.3 -90)
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C6"
-			(at 0 -1.85 0)
+			(at 0 -1.85 90)
 			(layer "F.SilkS")
 			(uuid "efe5f90a-0025-4be6-a0d9-4e362d104f72")
 			(effects
@@ -4422,7 +4422,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 0 1.85 0)
+			(at 0 1.85 90)
 			(layer "F.Fab")
 			(uuid "9cad8322-494e-4f4f-a951-cf26f3440ea1")
 			(effects
@@ -4433,7 +4433,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "af8a77fb-0d6e-4543-a236-3af14d533208")
@@ -4444,7 +4444,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eb977aa5-86a9-4165-a7f4-477be2de851d")
@@ -4455,7 +4455,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2b82e4a5-771e-42db-91f5-f39ea62928e6")
@@ -4479,16 +4479,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.711252 -0.91)
-			(end 0.711252 -0.91)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9b32f811-a53b-4ca9-8b2d-ef0b3cc8a9a9")
-		)
-		(fp_line
 			(start -0.711252 0.91)
 			(end 0.711252 0.91)
 			(stroke
@@ -4497,6 +4487,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "795be865-952a-43fb-abe9-9d02b6b1b623")
+		)
+		(fp_line
+			(start -0.711252 -0.91)
+			(end 0.711252 -0.91)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9b32f811-a53b-4ca9-8b2d-ef0b3cc8a9a9")
 		)
 		(fp_rect
 			(start -2.3 -1.15)
@@ -4521,7 +4521,7 @@
 			(uuid "23e2918e-de1e-4cd5-8c44-906a254af223")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "2c6c141f-70cf-4857-9d0f-a3908a704c5a")
 			(effects
@@ -4532,7 +4532,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.475 0)
+			(at -1.475 0 270)
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
@@ -4541,7 +4541,7 @@
 			(uuid "7cc2277e-d38e-4e9e-8671-931ff1fb33e5")
 		)
 		(pad "2" smd roundrect
-			(at 1.475 0)
+			(at 1.475 0 270)
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
@@ -7360,7 +7360,7 @@
 	(footprint "Capacitor_SMD:C_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "e534aaab-aade-4458-94ae-d29d7fbbdfe4")
-		(at 123.5 130.3 90)
+		(at 123.75 130.3 90)
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -7518,11 +7518,11 @@
 	(footprint "Drone_MCU_Sensors:PQFN50P300X250X97-14N"
 		(layer "F.Cu")
 		(uuid "ec74270a-cfd3-42a6-bca2-78560d820d77")
-		(at 113.4 132)
+		(at 118.2625 132)
 		(property "Reference" "U5"
 			(at -0.176 -2.0048 0)
 			(layer "F.SilkS")
-			(uuid "9b41079c-d751-45b0-b4ec-bc9c06d019ae")
+			(uuid "2d184c44-1638-4d15-be57-359a67323520")
 			(effects
 				(font
 					(size 0.48 0.48)
@@ -7533,7 +7533,7 @@
 		(property "Value" "ICM-42631"
 			(at 4.7008 1.9952 0)
 			(layer "F.Fab")
-			(uuid "466af5e5-e16a-4a2f-acc7-b929ce15a6e4")
+			(uuid "10fcac4b-f64c-4ebe-9214-14cf96723fe6")
 			(effects
 				(font
 					(size 0.48 0.48)
@@ -7545,7 +7545,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "85fd17ce-5947-4272-b0d1-867d99dff79a")
+			(uuid "6aef87ab-0a5b-4807-b293-c2b188c513c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7556,7 +7556,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9f8fc2c3-3799-485d-a747-322368f16e36")
+			(uuid "68b937d4-0953-4f1f-9415-8cf3ee3421b9")
 			(effects
 				(font
 					(size 1.27 1.27)
