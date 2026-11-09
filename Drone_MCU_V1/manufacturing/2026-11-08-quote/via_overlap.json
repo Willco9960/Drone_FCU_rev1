@@ -1,0 +1,27 @@
+[
+  {
+    "track": "34046dc0-8b96-4ebb-9e24-9f51247ea92c",
+    "endpoint_distance_mm": 0.2,
+    "copper_overlap_mm": 0.35000000000000003
+  },
+  {
+    "track": "51f2845c-485c-4c46-9642-a504d0f36425",
+    "endpoint_distance_mm": 0.1,
+    "copper_overlap_mm": 0.375
+  },
+  {
+    "track": "56e5f742-2a50-4e74-8309-9eb719ba07c0",
+    "endpoint_distance_mm": 0.2,
+    "copper_overlap_mm": 0.35000000000000003
+  },
+  {
+    "track": "72c1ae30-bc44-478d-8efb-33ad0cfecaa2",
+    "endpoint_distance_mm": 0.1,
+    "copper_overlap_mm": 0.375
+  },
+  {
+    "track": "c0d365f1-8ec7-4587-8b26-1c0169a0547b",
+    "endpoint_distance_mm": 0.2,
+    "copper_overlap_mm": 0.35000000000000003
+  }
+]

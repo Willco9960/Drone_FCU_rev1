@@ -175,3 +175,21 @@ Append a dated entry when a meaningful decision is made or changed. Record the c
 
 - The saved board was missing the lower-left Edge.Cuts corner arc; restored the exact arc from the prior board backup. KiCad DRC after refill reports a closed outline, zero unconnected items, and the existing 14 U5 mask-clearance findings.
 - Tried a fixed parallel USB segment and rerouting the rest of the board on a copy. The best complete-connectivity candidate still has a VBUS/USB trace crossing, two copper-clearance violations and one starved ground thermal. It is not applied to the main board. Full USB differential routing and order readiness remain open.
+
+## 2026-11-07 — Final routing review and local ground returns
+
+- User authorized final routing/electrical review and repairs, excluding silkscreen legibility. Added five 0.70/0.30 mm GND vias at C13/C6/C9/C17 ground returns and near the MCU-side IMU clock transition; all original traces and all 214 pad geometries/net assignments were checked unchanged.
+- Restored four PCB references to match the schematic (SW1/SW2/TP1/TP4), preserving descriptive labels as separate text. Explicit final CLI parity now has zero findings; DRC has only 14 silkscreen dimension warnings and the two justified U2 internal USB connection exclusions. No new DRC suppression was added.
+- Review and evidence: Drone_MCU_V1/reviews/2026-11-07-final/REVIEW.md. Sustained-load AP2112 thermal budget, manufacturer-confirmed stackup/USB impedance, final BOM/capacitor qualification and assembly checks remain open. Older fabrication archives predate these changes and must be regenerated before ordering. This is a bench-prototype routing pass, not unrestricted full-load or assembly release.
+
+## 2026-11-08 — Budget manufacturing quote package; production hold
+
+- User requested minimum overall assembled cost. Recommend quoting five fabricated boards with only two assembled, using the current H743/ICM-42631 design; no part substitution or PCB edit applied. ICM-42631 requires Standard PCBA per the official listing. ICM-42688-P permits Economic but its observed unit cost may erase savings; cheapest delivered option is not established without a real quote.
+- Complete current Gerbers, separate drills and candidate 31-component / 17-line BOM and CPL are in `Drone_MCU_V1/manufacturing/2026-11-08-quote/`. Read ORDERING.md and REVIEW.md before using them. Files marked QUOTE_ONLY are not production authorization. J1 centroid corrected in CPL only; rotations still require vendor preview.
+- Fresh DRC has 14 silk warnings, two justified excluded U2 internal USB connections, zero parity findings and no unexcluded copper/connectivity errors. Audit copy enabled all ignored categories and found five connected, off-center GND track/via endpoints. Independent Gerber drill check matched 55/55 holes/slots within 0.002 mm. Source PCB hash remains 5d5d9df668ff5c6862805d0a10dd6b63afac1c4cca6bb96d63a87378d499f9c6.
+- Production remains held for actual assembly matching/stock and capacitor qualification, stackup/carrier/stencil/placement approval, and sustained-load regulator requirements. AP2112 is not cleared for unrestricted full-speed NN operation. No order, payment, firmware test or hardware qualification performed.
+
+## 2026-11-08 — OSP finish for budget quote
+
+- User selected OSP instead of ENIG to save approximately $20. JLC describes OSP as flat and suitable for fine-pitch assembly; assembler acceptance for the custom U5 pads remains open. Unassembled boards need appropriate sealed storage and prompt soldering after opening. No board artwork changed.
+

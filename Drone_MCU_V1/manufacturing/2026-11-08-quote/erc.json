@@ -1,0 +1,351 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-08T12:41:28",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.1",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79",
+            "violations": [
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C15 [C_Small]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 0.3175
+                            },
+                            "uuid": "d4d355ec-a378-41b6-9a7c-507ecb4d29ac"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C16 [C_Small]",
+                            "pos": {
+                                "x": 1.0287,
+                                "y": 0.3175
+                            },
+                            "uuid": "c97ff381-8843-41eb-80b8-95bd49c1b807"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C17 [C_Small]",
+                            "pos": {
+                                "x": 1.0287,
+                                "y": 0.4064
+                            },
+                            "uuid": "c993bc9f-add8-49c5-a31f-167db3c253a9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C14 [C_Small]",
+                            "pos": {
+                                "x": 0.3429,
+                                "y": 0.9271
+                            },
+                            "uuid": "6a206a1e-510d-4e04-96d7-1ce704a6018e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C13 [C_Small]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.9271
+                            },
+                            "uuid": "d628659e-cd8a-4d10-b82a-46d32fa67ba9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C12 [C_Small]",
+                            "pos": {
+                                "x": 0.5461,
+                                "y": 1.3462
+                            },
+                            "uuid": "1bc12115-625c-4ee9-b71e-539435384b68"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C6 [C_Small]",
+                            "pos": {
+                                "x": 1.5113,
+                                "y": 0.635
+                            },
+                            "uuid": "e23409c0-118f-47ef-8510-de68b1692c4a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C5 [C_Small]",
+                            "pos": {
+                                "x": 1.5875,
+                                "y": 0.635
+                            },
+                            "uuid": "03527cb8-9cfd-463e-8c90-548694e043e6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C4 [C_Small]",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 0.635
+                            },
+                            "uuid": "833e526e-88c4-4ce7-a99d-729c7925fb2d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C3 [C_Small]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 0.635
+                            },
+                            "uuid": "784e70dd-f703-4723-a95e-2a1341d903eb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C2 [C_Small]",
+                            "pos": {
+                                "x": 1.8161,
+                                "y": 0.635
+                            },
+                            "uuid": "ee854974-44ed-48b0-b2ad-d1835128d617"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [C_Small]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 0.635
+                            },
+                            "uuid": "d5866c88-b931-4f62-981e-426290cf8320"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C7 [C_Small]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.635
+                            },
+                            "uuid": "96bf7eda-0c5b-475e-ab9b-c1ab4ea60f51"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C8 [C_Small]",
+                            "pos": {
+                                "x": 2.2098,
+                                "y": 0.635
+                            },
+                            "uuid": "f771ab8e-a5a4-4b86-a925-b6059322380d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C9 [C_Small]",
+                            "pos": {
+                                "x": 2.286,
+                                "y": 0.635
+                            },
+                            "uuid": "8a508c42-5442-4b87-821e-74063a453cfe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C11 [C_Small]",
+                            "pos": {
+                                "x": 1.7653,
+                                "y": 2.0447
+                            },
+                            "uuid": "624c11b6-1dcb-45f4-89c9-4b349e2907c7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'C_Small' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol C10 [C_Small]",
+                            "pos": {
+                                "x": 1.8415,
+                                "y": 2.0447
+                            },
+                            "uuid": "f945a988-205f-4aa1-b96c-1813b57f22f1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79/16329a77-8002-4a88-a037-5aa27b347ca6",
+            "violations": [
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 48 [VCAP, Power output, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 1.9685
+                            },
+                            "uuid": "7ac93bca-d9f1-4110-a548-0aee9e8c3375"
+                        },
+                        {
+                            "description": "Symbol U1 Pin 73 [VCAP, Power output, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 1.9939
+                            },
+                            "uuid": "ab712989-811a-459a-9592-ed174e82fefd"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Sensors/",
+            "uuid_path": "/b322dd26-fd40-4dbd-87cd-c80c7b0cca79/b19df1e6-6e74-48b3-9112-d2c75061099b",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 9 [INT2/FSYNC/AUX2_SDIO, Bidirectional, Line]",
+                            "pos": {
+                                "x": 0.3683,
+                                "y": 0.4318
+                            },
+                            "uuid": "c1f2b82d-b219-4c8b-9b9b-b8887096c544"
+                        },
+                        {
+                            "description": "Symbol #FLG02 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.7366,
+                                "y": 0.508
+                            },
+                            "uuid": "8c23495f-3913-49c2-99bc-944bc2cb8f3a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        }
+    ],
+    "source": "Drone_MCU_V1.kicad_sch"
+}

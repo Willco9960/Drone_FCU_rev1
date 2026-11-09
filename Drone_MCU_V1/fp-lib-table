@@ -1,4 +1,5 @@
 (fp_lib_table
-  (lib (name "Drone_MCU_Sensors") (type "KiCad") (uri "${KIPRJMOD}/Drone_MCU_Sensors.pretty") (options "") (descr "V1 sensor footprints"))
-  (lib (name "Drone_MCU_Connectors")(type "KiCad")(uri "${KIPRJMOD}/Drone_MCU_Connectors.pretty")(options "")(descr "V1 connector footprint with adjusted edge silkscreen"))
+	(version 7)
+	(lib (name "Drone_MCU_Sensors") (type "KiCad") (uri "E:/GT_Projects/Drone_MCU/Drone_MCU_V1/Drone_MCU_Sensors.pretty") (options "") (descr "V1 sensor footprints"))
+	(lib (name "Drone_MCU_Connectors") (type "KiCad") (uri "E:/GT_Projects/Drone_MCU/Drone_MCU_V1/Drone_MCU_Connectors.pretty") (options "") (descr "V1 connector footprint with adjusted edge silkscreen"))
 )

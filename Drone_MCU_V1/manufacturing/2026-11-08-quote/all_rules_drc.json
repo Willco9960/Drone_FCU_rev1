@@ -1,0 +1,393 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-08T12:39:01",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "Drone_MCU_V1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "comment": "",
+            "description": "Missing connection between items",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "Track [/MCU/USB_D+] on F.Cu, length 1.5250 mm",
+                    "pos": {
+                        "x": 124.5875,
+                        "y": 109.9875
+                    },
+                    "uuid": "59eb376a-9d55-402f-a6e5-21543e5e76ed"
+                },
+                {
+                    "description": "Track [/MCU/USB_D+] on F.Cu, length 0.6625 mm",
+                    "pos": {
+                        "x": 129.049999,
+                        "y": 109.9875
+                    },
+                    "uuid": "e80b5bb9-f9c4-4a7b-8d9e-972daac14f3f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "comment": "",
+            "description": "Missing connection between items",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "Track [/MCU/USB_D-] on F.Cu, length 1.5500 mm",
+                    "pos": {
+                        "x": 124.5625,
+                        "y": 108.0875
+                    },
+                    "uuid": "ad7efc60-e11e-4995-9d09-1fc07c917596"
+                },
+                {
+                    "description": "Track [/MCU/USB_D-] on F.Cu, length 0.7500 mm",
+                    "pos": {
+                        "x": 128.3875,
+                        "y": 108.0875
+                    },
+                    "uuid": "19f92289-05a1-4e5a-8f2c-9c43acf6bb65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 108.925
+                    },
+                    "uuid": "34046dc0-8b96-4ebb-9e24-9f51247ea92c"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 108.925
+                    },
+                    "uuid": "ab580bec-0b3f-4815-8a38-cbb81081386a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 120.6,
+                        "y": 135.5
+                    },
+                    "uuid": "51f2845c-485c-4c46-9642-a504d0f36425"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.9,
+                        "y": 135.7
+                    },
+                    "uuid": "4a8135a3-c69b-4fea-8b85-325b8b098af1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7625 mm",
+                    "pos": {
+                        "x": 115.8,
+                        "y": 108.925
+                    },
+                    "uuid": "56e5f742-2a50-4e74-8309-9eb719ba07c0"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 108.925
+                    },
+                    "uuid": "ab580bec-0b3f-4815-8a38-cbb81081386a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.0500 mm",
+                    "pos": {
+                        "x": 120.8,
+                        "y": 135.7
+                    },
+                    "uuid": "72c1ae30-bc44-478d-8efb-33ad0cfecaa2"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.9,
+                        "y": 135.7
+                    },
+                    "uuid": "4a8135a3-c69b-4fea-8b85-325b8b098af1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.0250 mm",
+                    "pos": {
+                        "x": 115.8,
+                        "y": 108.925
+                    },
+                    "uuid": "c0d365f1-8ec7-4587-8b26-1c0169a0547b"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 108.925
+                    },
+                    "uuid": "ab580bec-0b3f-4815-8a38-cbb81081386a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'GND' on F.Silkscreen",
+                    "pos": {
+                        "x": 127.95,
+                        "y": 102.9
+                    },
+                    "uuid": "2bdc2a9e-a9c1-4e50-b834-4d27def3abce"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'GND' on F.Silkscreen",
+                    "pos": {
+                        "x": 127.95,
+                        "y": 102.9
+                    },
+                    "uuid": "2bdc2a9e-a9c1-4e50-b834-4d27def3abce"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "PCB text '3V3' on F.Silkscreen",
+                    "pos": {
+                        "x": 108.525,
+                        "y": 102.25
+                    },
+                    "uuid": "7715d8ca-4d8a-439b-9bda-f8be689ec9a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "PCB text '3V3' on F.Silkscreen",
+                    "pos": {
+                        "x": 108.525,
+                        "y": 102.25
+                    },
+                    "uuid": "7715d8ca-4d8a-439b-9bda-f8be689ec9a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'USB_VBUS' on F.Silkscreen",
+                    "pos": {
+                        "x": 134.35,
+                        "y": 110.9
+                    },
+                    "uuid": "3c59f717-14e1-46fa-80ab-273a587397f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'USB_VBUS' on F.Silkscreen",
+                    "pos": {
+                        "x": 134.35,
+                        "y": 110.9
+                    },
+                    "uuid": "3c59f717-14e1-46fa-80ab-273a587397f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'BOOT' on F.Silkscreen",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.25
+                    },
+                    "uuid": "6410c812-3628-4643-902d-88e339f5d89e"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'BOOT' on F.Silkscreen",
+                    "pos": {
+                        "x": 104.5,
+                        "y": 112.25
+                    },
+                    "uuid": "6410c812-3628-4643-902d-88e339f5d89e"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'NRST' on F.Silkscreen",
+                    "pos": {
+                        "x": 104.55,
+                        "y": 117.8
+                    },
+                    "uuid": "175270e4-b124-4412-9603-e39937b7874a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "PCB text 'NRST' on F.Silkscreen",
+                    "pos": {
+                        "x": 104.55,
+                        "y": 117.8
+                    },
+                    "uuid": "175270e4-b124-4412-9603-e39937b7874a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 126.8,
+                        "y": 127.65
+                    },
+                    "uuid": "af0c25b1-be67-4586-8fbc-95e44dc1677b"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 126.8,
+                        "y": 127.65
+                    },
+                    "uuid": "af0c25b1-be67-4586-8fbc-95e44dc1677b"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Text thickness out of range (board setup constraints silk text thickness min thickness 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C11",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 130.4
+                    },
+                    "uuid": "585aa5c3-816a-44b2-9b92-03475ba1aa70"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_thickness"
+        },
+        {
+            "description": "Text height out of range (board setup constraints silk text height min height 1.0000 mm; actual 0.5000 mm)",
+            "items": [
+                {
+                    "description": "Reference field of C11",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 130.4
+                    },
+                    "uuid": "585aa5c3-816a-44b2-9b92-03475ba1aa70"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        }
+    ]
+}

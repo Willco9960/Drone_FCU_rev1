@@ -1,0 +1,1041 @@
+{
+  "analyzer_type": "gerber",
+  "schema_version": "1.4.0",
+  "directory": "order_review\\gerbers",
+  "generator": "Pcbnew 10.0.1",
+  "layer_count": 4,
+  "board_dimensions": {
+    "width_mm": 38.1,
+    "height_mm": 38.1,
+    "area_mm2": 1451.6,
+    "source": "gbrjob"
+  },
+  "statistics": {
+    "gerber_files": 11,
+    "drill_files": 2,
+    "total_holes": 55,
+    "total_flashes": 1049,
+    "total_draws": 6893
+  },
+  "completeness": {
+    "found_layers": [
+      "B.Cu",
+      "B.Mask",
+      "B.Paste",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask",
+      "F.Paste",
+      "F.SilkS",
+      "In1.Cu",
+      "In2.Cu"
+    ],
+    "expected_layers": [
+      "B.Cu",
+      "B.Mask",
+      "B.Paste",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask",
+      "F.Paste",
+      "F.SilkS",
+      "In1.Cu",
+      "In2.Cu"
+    ],
+    "missing": [],
+    "extra": [],
+    "has_pth_drill": true,
+    "has_npth_drill": true,
+    "complete": true,
+    "source": "gbrjob"
+  },
+  "alignment": {
+    "aligned": false,
+    "issues": [
+      "Width varies by 2.0mm across copper/edge layers",
+      "Height varies by 2.7mm across copper/edge layers"
+    ],
+    "layer_extents": {
+      "B.Cu": {
+        "width": 36.999,
+        "height": 36.999
+      },
+      "B.Mask": {
+        "width": 32.25,
+        "height": 32.8
+      },
+      "B.Paste": {
+        "width": 0,
+        "height": 0
+      },
+      "B.SilkS": {
+        "width": 32.25,
+        "height": 32.8
+      },
+      "Edge.Cuts": {
+        "width": 38.0,
+        "height": 38.0
+      },
+      "F.Cu": {
+        "width": 35.95,
+        "height": 35.3
+      },
+      "F.Mask": {
+        "width": 33.575,
+        "height": 34.3
+      },
+      "F.Paste": {
+        "width": 26.5,
+        "height": 33.5
+      },
+      "F.SilkS": {
+        "width": 36.355,
+        "height": 36.155
+      },
+      "In1.Cu": {
+        "width": 36.999,
+        "height": 36.999
+      },
+      "In2.Cu": {
+        "width": 36.999,
+        "height": 36.999
+      },
+      "drill_NPTH": {
+        "width": 30.5,
+        "height": 30.5
+      },
+      "drill_PTH": {
+        "width": 33.55,
+        "height": 33.95
+      }
+    }
+  },
+  "drill_classification": {
+    "vias": {
+      "count": 35,
+      "tools": [
+        {
+          "diameter_mm": 0.3,
+          "count": 35
+        }
+      ]
+    },
+    "component_holes": {
+      "count": 16,
+      "tools": [
+        {
+          "diameter_mm": 0.6,
+          "count": 4
+        },
+        {
+          "diameter_mm": 0.65,
+          "count": 2,
+          "type": "NPTH"
+        },
+        {
+          "diameter_mm": 1.0,
+          "count": 10
+        }
+      ]
+    },
+    "mounting_holes": {
+      "count": 4,
+      "tools": [
+        {
+          "diameter_mm": 3.2,
+          "count": 4,
+          "type": "NPTH"
+        }
+      ]
+    },
+    "classification_method": "x2_attributes"
+  },
+  "pad_summary": {
+    "smd_apertures": 194,
+    "via_apertures": 140,
+    "heatsink_apertures": 0,
+    "tht_holes": 16,
+    "smd_source": "x2_aperture_function",
+    "smd_ratio": 0.92
+  },
+  "trace_widths": {
+    "unique_widths_mm": [
+      0.15,
+      0.25,
+      0.4
+    ],
+    "min_trace_mm": 0.15,
+    "max_trace_mm": 0.4,
+    "width_count": 3,
+    "min_feature_mm": 0.15
+  },
+  "component_analysis": {
+    "total_unique": 38,
+    "front_side": 38,
+    "back_side": 0,
+    "component_refs": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "D1",
+      "J1",
+      "J2",
+      "MH1",
+      "MH2",
+      "MH3",
+      "MH4",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "SW1",
+      "SW2",
+      "TP1",
+      "TP3",
+      "TP4",
+      "U1",
+      "U2",
+      "U3",
+      "U5"
+    ],
+    "has_x2_data": true,
+    "pads_per_component": {
+      "C1": 2,
+      "C10": 2,
+      "C11": 2,
+      "C12": 2,
+      "C13": 2,
+      "C14": 2,
+      "C15": 2,
+      "C16": 2,
+      "C17": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2,
+      "C8": 2,
+      "C9": 2,
+      "D1": 2,
+      "J1": 10,
+      "J2": 22,
+      "MH1": 1,
+      "MH2": 1,
+      "MH3": 1,
+      "MH4": 1,
+      "R1": 2,
+      "R2": 2,
+      "R3": 2,
+      "R4": 2,
+      "R5": 2,
+      "SW1": 2,
+      "SW2": 2,
+      "TP1": 1,
+      "TP3": 1,
+      "TP4": 1,
+      "U1": 100,
+      "U2": 6,
+      "U3": 5,
+      "U5": 14
+    },
+    "total_pads": 214
+  },
+  "net_analysis": {
+    "total_unique": 99,
+    "named_nets": 13,
+    "unnamed_nets": 86,
+    "power_nets": [
+      "+3V3",
+      "GND"
+    ],
+    "signal_nets": [
+      "/MCU/NRST",
+      "/MCU/SWCLK",
+      "/MCU/SWDIO",
+      "/MCU/USB_D+",
+      "/MCU/USB_D-",
+      "/MCU/USB_VBUS",
+      "IMU_CS",
+      "IMU_INT",
+      "IMU_MISO",
+      "IMU_MOSI",
+      "IMU_SCK"
+    ],
+    "total_pins": 205
+  },
+  "gerbers": [
+    {
+      "filename": "Drone_MCU_V1-B_Cu.gbl",
+      "layer_type": "B.Cu",
+      "units": "mm",
+      "aperture_count": 8,
+      "flash_count": 49,
+      "draw_count": 1930,
+      "region_count": 1,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L4,Bot",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ComponentPad": 4,
+          "ViaPad": 1,
+          "Conductor": 3
+        },
+        "by_function_flashes": {
+          "ComponentPad": 14,
+          "ViaPad": 35,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.15,
+          0.25,
+          0.4
+        ],
+        "min_feature_mm": 0.15
+      },
+      "x2_component_count": 0,
+      "x2_net_count": 12,
+      "x2_pin_count": 11
+    },
+    {
+      "filename": "Drone_MCU_V1-B_Mask.gbs",
+      "layer_type": "B.Mask",
+      "units": "mm",
+      "aperture_count": 6,
+      "flash_count": 20,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Soldermask,Bot",
+        "FilePolarity": "Negative"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.65
+      },
+      "x2_component_count": 6,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Drone_MCU_V1-B_Paste.gbp",
+      "layer_type": "B.Paste",
+      "units": "mm",
+      "aperture_count": 0,
+      "flash_count": 0,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Paste,Bot",
+        "FilePolarity": "Positive"
+      }
+    },
+    {
+      "filename": "Drone_MCU_V1-B_Silkscreen.gbo",
+      "layer_type": "B.SilkS",
+      "units": "mm",
+      "aperture_count": 6,
+      "flash_count": 20,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Legend,Bot",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.65
+      },
+      "x2_component_count": 6,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Drone_MCU_V1-Edge_Cuts.gm1",
+      "layer_type": "Edge.Cuts",
+      "units": "mm",
+      "aperture_count": 1,
+      "flash_count": 0,
+      "draw_count": 8,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Profile,NP"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "Profile": 1
+        },
+        "by_function_flashes": {
+          "Profile": 0
+        },
+        "min_feature_mm": 0.1
+      }
+    },
+    {
+      "filename": "Drone_MCU_V1-F_Cu.gtl",
+      "layer_type": "F.Cu",
+      "units": "mm",
+      "aperture_count": 29,
+      "flash_count": 243,
+      "draw_count": 369,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L1,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "SMDPad": 21,
+          "ComponentPad": 4,
+          "ViaPad": 1,
+          "Conductor": 3
+        },
+        "by_function_flashes": {
+          "SMDPad": 194,
+          "ComponentPad": 14,
+          "ViaPad": 35,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.15,
+          0.25,
+          0.4
+        ],
+        "min_feature_mm": 0.15
+      },
+      "x2_component_count": 0,
+      "x2_net_count": 99,
+      "x2_pin_count": 205
+    },
+    {
+      "filename": "Drone_MCU_V1-F_Mask.gts",
+      "layer_type": "F.Mask",
+      "units": "mm",
+      "aperture_count": 27,
+      "flash_count": 214,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Soldermask,Top",
+        "FilePolarity": "Negative"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.1
+      },
+      "x2_component_count": 38,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Drone_MCU_V1-F_Paste.gtp",
+      "layer_type": "F.Paste",
+      "units": "mm",
+      "aperture_count": 20,
+      "flash_count": 191,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Paste,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.15
+      },
+      "x2_component_count": 30,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Drone_MCU_V1-F_Silkscreen.gto",
+      "layer_type": "F.SilkS",
+      "units": "mm",
+      "aperture_count": 31,
+      "flash_count": 214,
+      "draw_count": 774,
+      "region_count": 3,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Legend,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.1
+      },
+      "x2_component_count": 38,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Drone_MCU_V1-In1_Cu.g1",
+      "layer_type": "In1.Cu",
+      "units": "mm",
+      "aperture_count": 5,
+      "flash_count": 49,
+      "draw_count": 1906,
+      "region_count": 1,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L2,Inr",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ComponentPad": 4,
+          "ViaPad": 1
+        },
+        "by_function_flashes": {
+          "ComponentPad": 14,
+          "ViaPad": 35
+        },
+        "min_feature_mm": 0.7
+      },
+      "x2_component_count": 2,
+      "x2_net_count": 12,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Drone_MCU_V1-In2_Cu.g2",
+      "layer_type": "In2.Cu",
+      "units": "mm",
+      "aperture_count": 5,
+      "flash_count": 49,
+      "draw_count": 1906,
+      "region_count": 1,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.1",
+        "CreationDate": "2026-11-08T12:36:52-05:00",
+        "ProjectId": "Drone_MCU_V1,44726f6e-655f-44d4-9355-5f56312e6b69,rev?",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L3,Inr",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ComponentPad": 4,
+          "ViaPad": 1
+        },
+        "by_function_flashes": {
+          "ComponentPad": 14,
+          "ViaPad": 35
+        },
+        "min_feature_mm": 0.7
+      },
+      "x2_component_count": 2,
+      "x2_net_count": 12,
+      "x2_pin_count": 0
+    }
+  ],
+  "drills": [
+    {
+      "filename": "Drone_MCU_V1-NPTH.drl",
+      "type": "NPTH",
+      "units": "mm",
+      "hole_count": 6,
+      "tools": {
+        "T1": {
+          "diameter_mm": 0.65,
+          "hole_count": 2,
+          "aper_function": "NonPlated,NPTH,ComponentDrill"
+        },
+        "T2": {
+          "diameter_mm": 3.2,
+          "hole_count": 4,
+          "aper_function": "NonPlated,NPTH,ComponentDrill"
+        }
+      },
+      "layer_span": [
+        1,
+        4
+      ],
+      "x2_attributes": {
+        "CreationDate": "2026-11-08T12:36:55-05:00",
+        "GenerationSoftware": "Kicad,Pcbnew,10.0.1",
+        "FileFunction": "NonPlated,1,4,NPTH"
+      }
+    },
+    {
+      "filename": "Drone_MCU_V1-PTH.drl",
+      "type": "PTH",
+      "units": "mm",
+      "hole_count": 49,
+      "tools": {
+        "T1": {
+          "diameter_mm": 0.3,
+          "hole_count": 35,
+          "aper_function": "Plated,PTH,ViaDrill"
+        },
+        "T2": {
+          "diameter_mm": 0.6,
+          "hole_count": 4,
+          "aper_function": "Plated,PTH,ComponentDrill"
+        },
+        "T3": {
+          "diameter_mm": 1.0,
+          "hole_count": 10,
+          "aper_function": "Plated,PTH,ComponentDrill"
+        }
+      },
+      "layer_span": [
+        1,
+        4
+      ],
+      "x2_attributes": {
+        "CreationDate": "2026-11-08T12:36:55-05:00",
+        "GenerationSoftware": "Kicad,Pcbnew,10.0.1",
+        "FileFunction": "Plated,1,4,PTH"
+      }
+    }
+  ],
+  "drill_tools": {
+    "0.65mm": {
+      "diameter_mm": 0.65,
+      "count": 2,
+      "type": "NPTH"
+    },
+    "3.2mm": {
+      "diameter_mm": 3.2,
+      "count": 4,
+      "type": "NPTH"
+    },
+    "0.3mm": {
+      "diameter_mm": 0.3,
+      "count": 35,
+      "type": "PTH"
+    },
+    "0.6mm": {
+      "diameter_mm": 0.6,
+      "count": 4,
+      "type": "PTH"
+    },
+    "1.0mm": {
+      "diameter_mm": 1.0,
+      "count": 10,
+      "type": "PTH"
+    }
+  },
+  "job_file": {
+    "generator": "Pcbnew 10.0.1",
+    "vendor": "KiCad",
+    "creation_date": "2026-11-08T12:36:52-05:00",
+    "board_width_mm": 38.1,
+    "board_height_mm": 38.1,
+    "layer_count": 4,
+    "board_thickness_mm": 1.5842,
+    "finish": "None",
+    "project_name": "Drone_MCU_V1",
+    "design_rules": [
+      {
+        "layers": "Outer",
+        "PadToPad": 0.2,
+        "PadToTrack": 0.2,
+        "TrackToTrack": 0.2,
+        "MinLineWidth": 0.15,
+        "TrackToRegion": 0.2,
+        "RegionToRegion": 0.2
+      },
+      {
+        "layers": "Inner",
+        "PadToPad": 0.2,
+        "PadToTrack": 0.2,
+        "TrackToTrack": 0.2,
+        "TrackToRegion": 0.2,
+        "RegionToRegion": 0.2
+      }
+    ],
+    "expected_files": [
+      {
+        "path": "Drone_MCU_V1-F_Cu.gtl",
+        "function": "Copper,L1,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-In1_Cu.g1",
+        "function": "Copper,L2,Inr",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-In2_Cu.g2",
+        "function": "Copper,L3,Inr",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-B_Cu.gbl",
+        "function": "Copper,L4,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-F_Paste.gtp",
+        "function": "SolderPaste,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-B_Paste.gbp",
+        "function": "SolderPaste,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-F_Silkscreen.gto",
+        "function": "Legend,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-B_Silkscreen.gbo",
+        "function": "Legend,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Drone_MCU_V1-F_Mask.gts",
+        "function": "SolderMask,Top",
+        "polarity": "Negative"
+      },
+      {
+        "path": "Drone_MCU_V1-B_Mask.gbs",
+        "function": "SolderMask,Bot",
+        "polarity": "Negative"
+      },
+      {
+        "path": "Drone_MCU_V1-Edge_Cuts.gm1",
+        "function": "Profile",
+        "polarity": "Positive"
+      }
+    ],
+    "stackup": [
+      {
+        "type": "Legend",
+        "name": "Top Silk Screen"
+      },
+      {
+        "type": "SolderPaste",
+        "name": "Top Solder Paste"
+      },
+      {
+        "type": "SolderMask",
+        "name": "Top Solder Mask",
+        "thickness_mm": 0.01
+      },
+      {
+        "type": "Copper",
+        "name": "F.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "Dielectric",
+        "name": "F.Cu/In1.Cu",
+        "thickness_mm": 0.0994,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "In1.Cu",
+        "thickness_mm": 0.0152
+      },
+      {
+        "type": "Dielectric",
+        "name": "In1.Cu/In2.Cu",
+        "thickness_mm": 1.265,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "In2.Cu",
+        "thickness_mm": 0.0152
+      },
+      {
+        "type": "Dielectric",
+        "name": "In2.Cu/B.Cu",
+        "thickness_mm": 0.0994,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "B.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "SolderMask",
+        "name": "Bottom Solder Mask",
+        "thickness_mm": 0.01
+      },
+      {
+        "type": "SolderPaste",
+        "name": "Bottom Solder Paste"
+      },
+      {
+        "type": "Legend",
+        "name": "Bottom Silk Screen"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-002",
+      "category": "gerber_alignment",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Alignment: Width varies by 2.0mm across copper/edge layers",
+      "description": "Layer alignment issue: Width varies by 2.0mm across copper/edge layers",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+      "report_context": {
+        "section": "Gerber Alignment",
+        "impact": "Layer misregistration",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-002:bf01288910b2"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-002",
+      "category": "gerber_alignment",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Alignment: Height varies by 2.7mm across copper/edge layers",
+      "description": "Layer alignment issue: Height varies by 2.7mm across copper/edge layers",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+      "report_context": {
+        "section": "Gerber Alignment",
+        "impact": "Layer misregistration",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-002:b9e8aaf51cd0"
+    }
+  ],
+  "assessments": [],
+  "summary": {
+    "total_findings": 2,
+    "by_severity": {
+      "error": 0,
+      "warning": 2,
+      "info": 0
+    }
+  },
+  "trust_summary": {
+    "total_findings": 2,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 2,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 2,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "inputs": {
+    "source_files": [
+      "order_review\\gerbers\\Drone_MCU_V1-B_Cu.gbl",
+      "order_review\\gerbers\\Drone_MCU_V1-B_Mask.gbs",
+      "order_review\\gerbers\\Drone_MCU_V1-B_Paste.gbp",
+      "order_review\\gerbers\\Drone_MCU_V1-B_Silkscreen.gbo",
+      "order_review\\gerbers\\Drone_MCU_V1-Edge_Cuts.gm1",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Cu.gtl",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Mask.gts",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Paste.gtp",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Silkscreen.gto",
+      "order_review\\gerbers\\Drone_MCU_V1-In1_Cu.g1",
+      "order_review\\gerbers\\Drone_MCU_V1-In2_Cu.g2",
+      "order_review\\gerbers\\Drone_MCU_V1-job.gbrjob",
+      "order_review\\gerbers\\Drone_MCU_V1-NPTH.drl",
+      "order_review\\gerbers\\Drone_MCU_V1-PTH.drl"
+    ],
+    "source_hashes": {
+      "order_review\\gerbers\\Drone_MCU_V1-B_Cu.gbl": "7e51c2d774780ef2abe4b0b991495f70cdf0195fa1b8b19078676ad8164ac866",
+      "order_review\\gerbers\\Drone_MCU_V1-B_Mask.gbs": "a726ac99bbf099fcb5f8b86ecba5fa60d377e52c768b4b305678f217eb1ba5aa",
+      "order_review\\gerbers\\Drone_MCU_V1-B_Paste.gbp": "f9edda359e3a31e15b8c56d35b4f3ad1d8eae1041ee8107568dc3d9730520661",
+      "order_review\\gerbers\\Drone_MCU_V1-B_Silkscreen.gbo": "9f83bc86052e6317f4dba73e16e0a1761d231f9a97bea2ff3a7a6d87610611bd",
+      "order_review\\gerbers\\Drone_MCU_V1-Edge_Cuts.gm1": "b118ef5dcf3be888d4a0c8fc35cce7d31171488b67e896fce5bc8f1dbb3ae740",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Cu.gtl": "0e571ef9888ed64a16a41629cc1deb83062d9f66a942c72390e0a6b2ae2f9efc",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Mask.gts": "c7e43e467585e024ab1bd3552596d5d7d504bb2ca001a9e13791c001f65fdfd8",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Paste.gtp": "2af942406a6c339455b67569c665b31703fdd24a85dce70d400d53053c06e6c8",
+      "order_review\\gerbers\\Drone_MCU_V1-F_Silkscreen.gto": "34d3933ccc928db72befcddbc09f602664497bf715e2a180ec02e3d1444cb18a",
+      "order_review\\gerbers\\Drone_MCU_V1-In1_Cu.g1": "20cdc792ec3949e55fbbe67bae59743aa6938438ffaaf4698d72c5ceaea9ba7b",
+      "order_review\\gerbers\\Drone_MCU_V1-In2_Cu.g2": "2b493b54e8cf31ce6e483907d6ed79d6f934eb39ea934fc6e5ffe34f10b1a07b",
+      "order_review\\gerbers\\Drone_MCU_V1-job.gbrjob": "b8615b9d1cbfba6ab86588211fc8945473c9813e80e98ff74ad94ff7137631a2",
+      "order_review\\gerbers\\Drone_MCU_V1-NPTH.drl": "5270c25fc4c016ea219802ec1be2d5e1d8e8345b650973352ec1128eb9947243",
+      "order_review\\gerbers\\Drone_MCU_V1-PTH.drl": "8743c10f499f2cb0d807c2e354a8d909acda0d80679a81f209724d06c865af1b"
+    },
+    "run_id": "20261108T174120Z-0811b9",
+    "config_hash": null,
+    "upstream_artifacts": {}
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "audience_summary": {
+    "designer": {
+      "total_findings": 2,
+      "by_severity": {
+        "error": 0,
+        "warning": 2,
+        "info": 0
+      },
+      "by_category": {
+        "gerber_alignment": 2
+      },
+      "top_issues": [
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-002",
+          "category": "gerber_alignment",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Alignment: Width varies by 2.0mm across copper/edge layers",
+          "description": "Layer alignment issue: Width varies by 2.0mm across copper/edge layers",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "report_context": {
+            "section": "Gerber Alignment",
+            "impact": "Layer misregistration",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-002:bf01288910b2"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-002",
+          "category": "gerber_alignment",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Alignment: Height varies by 2.7mm across copper/edge layers",
+          "description": "Layer alignment issue: Height varies by 2.7mm across copper/edge layers",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "report_context": {
+            "section": "Gerber Alignment",
+            "impact": "Layer misregistration",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-002:b9e8aaf51cd0"
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 2,
+      "by_category": {
+        "gerber_alignment": 2
+      },
+      "top_issues": [
+        {
+          "rule_id": "GR-002",
+          "severity": "warning",
+          "summary": "Alignment: Width varies by 2.0mm across copper/edge layers",
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "category": "gerber_alignment"
+        },
+        {
+          "rule_id": "GR-002",
+          "severity": "warning",
+          "summary": "Alignment: Height varies by 2.7mm across copper/edge layers",
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "category": "gerber_alignment"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "low",
+      "blocker_count": 0,
+      "warning_count": 2,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "pass",
+        "pre_fab": "needs_review",
+        "bring_up": "pass"
+      },
+      "one_liner": "2 warnings across 1 category."
+    }
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261108T174120Z-0811b9"
+  }
+}

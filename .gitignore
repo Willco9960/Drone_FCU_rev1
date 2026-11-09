@@ -1,0 +1,17 @@
+# KiCad local state and lock files
+*.kicad_prl
+*.lck
+~*.lck
+
+# Automatic backups and editor history
+.history/
+.mcp-backups/
+*-backups/
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,15 @@
+{
+  "components": 31,
+  "unique_parts": 17,
+  "omitted": [
+    "TP1",
+    "TP3",
+    "TP4"
+  ],
+  "rotation_status": "KiCad rotations normalized only; JLC preview approval required",
+  "J1_center_mm": [
+    134.73,
+    -118.5
+  ],
+  "board_sha256": "5d5d9df668ff5c6862805d0a10dd6b63afac1c4cca6bb96d63a87378d499f9c6"
+}

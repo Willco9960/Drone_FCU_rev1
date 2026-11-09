@@ -1,0 +1,55 @@
+{
+  "sha256": "5d5d9df668ff5c6862805d0a10dd6b63afac1c4cca6bb96d63a87378d499f9c6",
+  "existing_tracks_unchanged": true,
+  "all_214_pads_unchanged": true,
+  "references_changed": [
+    [
+      "USB_VBUS",
+      "TP4"
+    ],
+    [
+      "BOOT",
+      "SW2"
+    ],
+    [
+      "3V3",
+      "TP1"
+    ],
+    [
+      "NRST",
+      "SW1"
+    ]
+  ],
+  "added_ground_vias": [
+    [
+      107.05,
+      124.475,
+      0.7,
+      0.3
+    ],
+    [
+      127.625,
+      128.574999,
+      0.7,
+      0.3
+    ],
+    [
+      120.9,
+      135.7,
+      0.7,
+      0.3
+    ],
+    [
+      113.1,
+      129.4,
+      0.7,
+      0.3
+    ],
+    [
+      116.0,
+      108.925,
+      0.7,
+      0.3
+    ]
+  ]
+}

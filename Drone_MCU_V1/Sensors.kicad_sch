@@ -1867,7 +1867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Drone_MCU_Sensors:PQFN50P300X250X97-14N"
+		(property "Footprint" "Drone_MCU_Sensors:ICM-42631_TDK_LGA14_trial"
 			(at 62.23 48.26 0)
 			(hide yes)
 			(show_name no)
