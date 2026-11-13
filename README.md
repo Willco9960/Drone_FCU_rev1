@@ -24,7 +24,13 @@ The V1 testbench board is currently in production. Once it arrives, I'll start t
 
 ## PCB images
 
-Images of the PCB will go here. The [manufacturing folder](Drone_MCU_V1/manufacturing/2026-11-08-quote/) already has copper-layer renders if you want a look at the layout in the meantime.
+Here's a look at the V1 board in KiCad before it heads to the bench.
+
+![3D view of the V1 testbench board](images/pcb-3d.png)
+
+![V1 board component layout](images/pcb-layout.png)
+
+![V1 board copper routing](images/pcb-routing.png)
 
 ## What's next
 
