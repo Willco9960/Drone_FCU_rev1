@@ -4,6 +4,10 @@ I'm building a drone flight controller from scratch and using it to explore neur
 
 This is a university project and a work in progress. There will probably be a lot of testing, debugging and coffee between a PCB and a flying drone.
 
+## How I built it
+
+I designed and routed the board myself in KiCad. I also used an AI agent connected through an MCP to help choose parts and check the schematic and routing as I went.
+
 ## The plan
 
 V1 is a USB-powered development board built around an STM32H743 and an IMU, the sensor that measures movement and rotation. The idea is to read that sensor on the board, send live data to a computer and show the board's orientation in a window.
