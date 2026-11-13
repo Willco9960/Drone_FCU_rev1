@@ -10,7 +10,7 @@ V1 is a USB-powered development board built around an STM32H743 and an IMU, the 
 
 I also want to train a small neural network in simulation and run it on the MCU. The computer will show what the sensor is doing alongside the network's predicted correction so I can see what it's learning before motors get involved.
 
-V1 is for the bench. It doesn't control motors or fly. Later versions will need flight hardware, reliable stabilization, a camera, tracking and plenty of testing before they become the autonomous drone I'm aiming for.
+The V1 testbench board is currently in production. Once it arrives, I'll start testing it on the bench. It doesn't control motors or fly. Later versions will need flight hardware, reliable stabilization, a camera, tracking and plenty of testing before they become the autonomous drone I'm aiming for.
 
 ## Where things are
 
@@ -28,4 +28,4 @@ Images of the PCB will go here. The [manufacturing folder](Drone_MCU_V1/manufact
 
 ## What's next
 
-Get the board assembled and tested, read the IMU, stream the data to a computer and build the live orientation display. After that it's time to get a neural network trained in simulation and see what the MCU can do with it.
+Test the board when it arrives, read the IMU, stream the data to a computer and build the live orientation display. After that it's time to get a neural network trained in simulation and see what the MCU can do with it.
