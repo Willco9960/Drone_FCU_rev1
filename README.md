@@ -2,7 +2,7 @@
 
 I'm building a drone flight controller from scratch and using it to explore neural networks along the way. The long-term goal is a small autonomous drone that can track a person, follow them and orbit around them. First though, I need a board that works on my desk and tells me which way is up.
 
-This is a university project and a work in progress. There will probably be a lot of testing, debugging and coffee between a PCB and a flying drone.
+This is a university project and a work in progress.
 
 ## How I built it
 
