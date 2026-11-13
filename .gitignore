@@ -15,3 +15,13 @@ _autosave-*
 .DS_Store
 Thumbs.db
 .vscode/
+
+# KiCad generated footprint cache
+fp-info-cache
+
+# OS-generated files
+Desktop.ini
+._*
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes/
